@@ -6,6 +6,7 @@ import { cn } from "../../lib/utils";
 export function HeroSection() {
   return (
     <div
+      id="home"
       className="relative flex h-screen 
       w-full flex-col
       justify-center

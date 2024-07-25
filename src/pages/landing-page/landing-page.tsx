@@ -6,11 +6,11 @@ type Props = {};
 
 const LandingPage = (props: Props) => {
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col scroll-smooth">
       <NavBar />
       <HeroSection />
       <AboutUS />
-      <div className="h-screen"></div>
+      <div id="our-values" className="h-screen"></div>
     </div>
   );
 };

@@ -15,10 +15,19 @@ const NavBar = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="flex h-9 items-center gap-4 text-white text-md overflow-hidden"
         >
-          <div className=" text-nowrap">Home</div>
-          <div className=" text-nowrap">Contact</div>
-          <div className=" text-nowrap">About US</div>
-          <div className=" text-nowrap">Values</div>
+          <a href="#home" className=" text-nowrap">
+            Home
+          </a>
+          <a href="#our-services" className=" text-nowrap">
+            Our Services
+          </a>
+          <a href="#about-us" className=" text-nowrap">
+            About US
+          </a>
+
+          <a href="#our-values" className=" text-nowrap">
+            Values
+          </a>
         </motion.div>
       </div>
     </header>
