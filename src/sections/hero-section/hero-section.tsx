@@ -30,6 +30,21 @@ export function HeroSection() {
                 </span>
               </h2>
             </BoxReveal>
+            <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+              <h2 className="mt-[.5rem] text-[1rem]">
+                Our Mission is to empower business through Innovative
+                <br />
+                <span className="md:text-[#5046e6] text-white">
+                  TECHNOLOGY
+                </span>{" "}
+                solution. Our Commiment is to create seamless
+                <br /> digital{" "}
+                <span className="md:text-[#5046e6] text-white">
+                  EXPERIENCE
+                </span>{" "}
+                for our clients.{" "}
+              </h2>
+            </BoxReveal>
 
             <div className="mt-8">
               <BoxReveal boxColor={"#5046e6"} duration={0.5}>

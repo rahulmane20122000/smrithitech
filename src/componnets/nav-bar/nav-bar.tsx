@@ -12,7 +12,7 @@ const NavBar = () => {
         <motion.div
           initial={{ width: 0, marginLeft: 0, paddingRight: 0 }}
           animate={{ width: "auto", marginLeft: "16px", paddingRight: "8px" }}
-          transition={{ duration: 0.5, delay: 0.25 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           className="flex h-9 items-center gap-4 text-white text-md overflow-hidden"
         >
           <div className=" text-nowrap">Home</div>
