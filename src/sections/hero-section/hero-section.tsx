@@ -22,14 +22,14 @@ export function HeroSection() {
               </p>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+            {/* <BoxReveal boxColor={"#5046e6"} duration={0.5}>
               <h2 className="mt-[.5rem] text-[1rem]">
                 We Partener With Digital Brands And <br /> Scale Them{" "}
                 <span className="md:text-[#5046e6] text-white">
                   EXPONENTIALLY
                 </span>
               </h2>
-            </BoxReveal>
+            </BoxReveal> */}
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
               <h2 className="mt-[.5rem] text-[1rem]">
                 Our Mission is to empower business through Innovative
