@@ -1,24 +1,28 @@
 import { useState } from "react";
 import Accordion from "../../componnets/accordian/accordian";
+import { BorderBeam } from "../../componnets/border-beam/border-beam";
 
 const content = [
   {
     title: "Data Science & Artificial Intelligence",
     content:
       "Get hands-on experience with data science course including Python, Machine Learning, Deep Learning, Natural Language Processing (NLP), MLOps, Recurrent Neural Networks (RNNs), Generative Adversarial Networks (GANs), Attention, Transformers, BERT, and Business Intelligence Tools.",
-    image: "",
+    image:
+      "https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DA",
   },
   {
     title: "Cyber Security & Ethical Hacking",
     content:
       "Enroll in our comprehensive ethical hacking course for hands-on training across vital domains such as Network Security, Cloud Security, Ethical Hacking, Penetration Testing, Web Application Security, Mobile Application Security and Exploitation Techniques with countermeasures.",
-    image: "",
+    image:
+      "https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DA",
   },
   {
     title: "Investment Banking & Financial Analytics",
     content:
       "Gain hands-on experience in Financial Analysis, Corporate Finance, Equity, Fixed Income, Derivatives, Wealth Management, Equity Research, Financial Modeling, Merger and Acquisition Valuation, coupled with practical exposure to Prompt Engineering, Python, and Business Intelligence Tools.",
-    image: "",
+    image:
+      "https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DA",
   },
 ];
 
@@ -73,8 +77,14 @@ const EdTechServices = () => {
           </Accordion>
         ))}
       </div>
-      <div>
-        <img src={content[openAccordian].image} />
+      <div className="flex items-center justify-center p-10">
+        <div className="relative w-56 h-full rounded">
+          <img
+            className="p-1 w-full h-full object-cover rounded"
+            src={content[openAccordian].image}
+          />
+          <BorderBeam size={250} duration={12} delay={9} />
+        </div>
       </div>
     </div>
   );
