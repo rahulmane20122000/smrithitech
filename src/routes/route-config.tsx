@@ -9,7 +9,7 @@ const routeConfig = createBrowserRouter(
       element: <LandingPage />,
     },
   ],
-  { basename: "/" }
+  { basename: "/smrithitech" }
 );
 
 export default routeConfig;
