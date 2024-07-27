@@ -18,15 +18,15 @@ const NavBar = () => {
           <a href="#home" className=" text-nowrap">
             Home
           </a>
-          <a href="#our-services" className=" text-nowrap">
-            Our Services
-          </a>
           <a href="#about-us" className=" text-nowrap">
             About US
           </a>
 
           <a href="#our-values" className=" text-nowrap">
             Values
+          </a>
+          <a href="#our-services" className=" text-nowrap">
+            Our Services
           </a>
         </motion.div>
       </div>

@@ -1,6 +1,7 @@
 import NavBar from "../../componnets/nav-bar/nav-bar";
 import AboutUS from "../../sections/about-us/about-us";
 import { HeroSection } from "../../sections/hero-section/hero-section";
+import { OurValues } from "../../sections/our-values/our-values";
 
 type Props = {};
 
@@ -10,7 +11,8 @@ const LandingPage = (props: Props) => {
       <NavBar />
       <HeroSection />
       <AboutUS />
-      <div id="our-values" className="h-screen"></div>
+      <OurValues />
+      <div id="" className="h-screen"></div>
     </div>
   );
 };

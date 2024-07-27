@@ -7,7 +7,7 @@ export function MeteorsDemo() {
       <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
       <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-4 h-full overflow-hidden flex flex-col justify-center items-start">
         <div className=" max-w-screen-xl mx-auto">
-          <div className="text-center text-white py-2 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold underline decoration-wavy decoration-teal-400 w-full">
+          <div className="text-center text-white py-2 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold w-full">
             About us
           </div>
 
