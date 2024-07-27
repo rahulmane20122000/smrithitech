@@ -23,14 +23,6 @@ export function HeroSection() {
               </p>
             </BoxReveal>
 
-            {/* <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-              <h2 className="mt-[.5rem] text-[1rem]">
-                We Partener With Digital Brands And <br /> Scale Them{" "}
-                <span className="md:text-[#5046e6] text-white">
-                  EXPONENTIALLY
-                </span>
-              </h2>
-            </BoxReveal> */}
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
               <h2 className="mt-[.5rem] text-[1rem]">
                 Our Mission is to empower business through Innovative
@@ -43,7 +35,8 @@ export function HeroSection() {
                 <span className="md:text-[#5046e6] text-white">
                   EXPERIENCE
                 </span>{" "}
-                for our clients.{" "}
+                for our clients, enabling them to achieve their goals and
+                transform their industries.
               </h2>
             </BoxReveal>
 
