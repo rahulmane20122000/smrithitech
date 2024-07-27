@@ -24,6 +24,9 @@ const NavBar = () => {
           <a href="#our-values" className=" text-nowrap">
             Values
           </a>
+          <a href="#our-founder" className=" text-nowrap">
+            Team
+          </a>
           <a href="#our-services" className=" text-nowrap">
             Our Services
           </a>
