@@ -1,4 +1,5 @@
 enum PATH {
-    HOME = 'home'
+  INDEX = "/",
+  HOME = "home",
 }
-export default PATH
+export default PATH;
