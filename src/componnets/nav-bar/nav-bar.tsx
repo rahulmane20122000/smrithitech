@@ -21,7 +21,6 @@ const NavBar = () => {
           <a href="#about-us" className=" text-nowrap">
             About US
           </a>
-
           <a href="#our-values" className=" text-nowrap">
             Values
           </a>

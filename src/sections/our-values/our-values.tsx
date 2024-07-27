@@ -1,28 +1,7 @@
-"use client";
-
 import React, { forwardRef, useRef } from "react";
 
 import { cn } from "../../lib/utils";
 import { AnimatedBeam } from "../../componnets/animated-beams/animated-beams";
-
-const Circle = forwardRef<
-  HTMLDivElement,
-  { className?: string; children?: React.ReactNode }
->(({ className, children }, ref) => {
-  return (
-    <div
-      ref={ref}
-      className={cn(
-        "z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-});
-
-Circle.displayName = "Circle";
 
 const ValueCard = forwardRef<
   HTMLDivElement,
@@ -33,24 +12,24 @@ const ValueCard = forwardRef<
     title: string;
     content: string;
   }
->(({ className, children, content, title, icon }, ref) => {
+>(({ className, content, title, icon }, ref) => {
   return (
     <div
       ref={ref}
       className={cn(
-        "z-10 flex flex-col items-center justify-center rounded border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] w-64 md:w-72 mt-4",
+        "z-10 flex flex-col items-center justify-start rounded border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] w-64 md:w-72 mt-4",
         className
       )}
     >
       <div className="">{icon}</div>
-      <div className="text-bold">{title}</div>
-      <div className="">{content}</div>
+      <div className="font-bold text-lg text-center">{title}</div>
+      <div className="text-center">{content}</div>
     </div>
   );
 });
 
 ValueCard.displayName = "ValueCard";
-const duration = 5;
+const duration = 3;
 export function OurValues({ className }: { className?: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const div1Ref = useRef<HTMLDivElement>(null);
@@ -65,12 +44,12 @@ export function OurValues({ className }: { className?: string }) {
     <div
       id="our-values"
       className={cn(
-        "relative flex  w-full items-center justify-center overflow-hidden bg-background p-10 mt-10",
+        "relative flex  w-full items-center justify-center overflow-hidden bg-background p-10 pt-20",
         className
       )}
       ref={containerRef}
     >
-      <div className="flex size-full max-w-screen-lg flex-col items-stretch justify-between gap-10">
+      <div className="pt-4 flex size-full max-w-screen-lg flex-col items-stretch justify-between gap-10">
         <div className="flex  justify-center">
           <div
             ref={div6Ref}
@@ -83,45 +62,45 @@ export function OurValues({ className }: { className?: string }) {
             </div>
           </div>
         </div>
-        <div className="flex justify-center flex-wrap gap-12 mt-20">
+        <div className="flex justify-center items-start flex-wrap gap-12 mt-20">
           <ValueCard
             ref={div1Ref}
             title={"Partnerships and Collaborations"}
-            icon={<Icons.googleDrive />}
+            icon={<Icons.googleDocs />}
             content={
               "Forming partnerships with educational institutions,industry experts, and tech companies to enhance the learning experience and provide additional opportunities."
             }
           />
           <ValueCard
             ref={div2Ref}
-            title={"Partnerships and Collaborations"}
+            title={"Affordability"}
             icon={<Icons.googleDrive />}
             content={
-              "Forming partnerships with educational institutions,industry experts, and tech companies to enhance the learning experience and provide additional opportunities."
+              "Providing cost-effective solutions that offer great value for money, making high-quality education accessible to a broader audience."
             }
           />
           <ValueCard
             ref={div3Ref}
-            title={"Partnerships and Collaborations"}
-            icon={<Icons.googleDrive />}
+            title={"Flexibility and Accessibility"}
+            icon={<Icons.whatsapp />}
             content={
-              "Forming partnerships with educational institutions,industry experts, and tech companies to enhance the learning experience and provide additional opportunities."
+              "Ensuring that learning materials are accessible across various devices and platforms, allowing students to learn anytime, anywhere"
             }
           />
           <ValueCard
             ref={div4Ref}
-            title={"Partnerships and Collaborations"}
-            icon={<Icons.googleDrive />}
+            title={"Innovative Learning Solutions"}
+            icon={<Icons.notion />}
             content={
-              "Forming partnerships with educational institutions,industry experts, and tech companies to enhance the learning experience and provide additional opportunities."
+              "Offering unique, cutting-edge learning technologies such as AI-driven personalized learning paths, gamification, or VR/AR-based immersive experiences."
             }
           />
           <ValueCard
             ref={div5Ref}
-            title={"Partnerships and Collaborations"}
-            icon={<Icons.googleDrive />}
+            title={"Client-Centric Innovation"}
+            icon={<Icons.openai />}
             content={
-              "Forming partnerships with educational institutions,industry experts, and tech companies to enhance the learning experience and provide additional opportunities."
+              "Here innovation is driven by empathy. We focus on developing user-friendly, intuitive solutions that address real-world challenges."
             }
           />
         </div>
