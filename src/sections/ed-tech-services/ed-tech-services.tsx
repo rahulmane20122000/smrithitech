@@ -29,7 +29,7 @@ const content = [
 const EdTechServices = () => {
   const [openAccordian, setOpenAccordian] = useState(0);
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2">
       <div className="flex flex-col pt-10">
         {content.map((item, index) => (
           <Accordion
@@ -77,7 +77,7 @@ const EdTechServices = () => {
           </Accordion>
         ))}
       </div>
-      <div className="flex items-start justify-center p-10">
+      <div className="flex items-start md:justify-center p-10">
         {/* <img
             className="p-1 w-full h-full object-cover rounded"
             src={content[openAccordian].image}
@@ -86,7 +86,7 @@ const EdTechServices = () => {
           items={content.map((i) => ({
             id: i.title,
             content: (
-              <div className="w-64 h-96 rounded m-1 overflow-hidden">
+              <div className="w-full md:w-64 h-96 rounded m-1 overflow-hidden">
                 <img className="w-full h-full object-cover" src={i.image} />
               </div>
             ),
